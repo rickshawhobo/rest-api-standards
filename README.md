@@ -94,9 +94,8 @@ Section 7: Retrieval Data Envelope
 All data resource and collection retrieval MUST return data inside a data envelope. In JSON it would look like
 
 
-
 GET /countries/US
-
+```
 {
     "data": {
         "id": "US",
@@ -104,10 +103,10 @@ GET /countries/US
         "founded": 1776
     }
 }
-
+```
 
 GET /countries/
-
+```
 {
     "data": [
     {
@@ -123,7 +122,7 @@ GET /countries/
     ]
 }
 
-
+```
 
 
 Section 8: Empty Collections
@@ -134,11 +133,11 @@ GET /puppies/
 
 
 STATUS: 200
-
+```
 {
     "data": []
 }
-
+```
 
 
 
@@ -146,7 +145,7 @@ Section 9: Pagination in Retrieval of Collections
 Collections MAY return meta data about the collection
 
 
-
+```
 {
     "data":
         [
@@ -159,6 +158,7 @@ Collections MAY return meta data about the collection
         ]
     "total": 1000
 }
+```
 Section 9.1: Controlling Collection Pagination
 Controlling the collection pagination SHOULD be done via an endpoint modifier
 
@@ -172,7 +172,7 @@ Section 10: Resource Property Naming
 Resource properties MUST be named in lowercase
 
 Resource properites MUST be named in camel case style in place of a space
-
+```
 {
     "id": 123,
     "firstName": "Bob",
@@ -182,7 +182,7 @@ Resource properites MUST be named in camel case style in place of a space
     "geoHash": "gbsuv"
 }
 
-
+```
 
 
 Section 11: Other Recommendations
